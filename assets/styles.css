@@ -16,6 +16,11 @@ p {
     margin: 0;
 }
 
+/* button:hover {
+    background: linear-gradient(to top, red 0%, #fa71cd 100%);
+    color: black
+} */
+
 header {
     box-shadow: 0 1px 10px -3px grey;
     position: relative;
@@ -80,6 +85,16 @@ header img {
     height: 60px;
     width: 70vw;
     /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
+    box-shadow: 0px 4px 10px 0px #00000049;
+    /* transition: all .2s ease; */
+}
+
+#explore button:hover {
+    background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
+}
+
+#explore button:active {
+    background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
 }
 
 #fonctionnement, #restaurants {
@@ -97,12 +112,27 @@ header img {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    width: 100%;
+    width: 95%;
     height: 70px;
     margin: 2rem 0 0 0;
     border-radius: 20px;
     background-color: #F6F6F6;
     font-size: 1.2rem;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    position: relative;
+}
+
+#fonctionnement-cards .card p:first-child {
+    background-color: #9747FF;
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -1rem;
 }
 
 .card i {
@@ -116,6 +146,7 @@ header img {
 #restaurants-cards .card {
     border-radius: 20px;
     margin-top: 1rem;
+    position: relative;
 }
 
 #restaurants-cards img {
@@ -149,15 +180,78 @@ header img {
 #restaurants-cards i {
     padding: 0;
     font-size: 1.5rem;
+    position: relative;
 }
 
+.gradient-path {
+    fill: #FFF;
+    transition: fill 0.3s;
+  }
+  
+  .gradient-path:hover {
+    fill: url(#custom-gradient); 
+    stroke: none;
+  }
+
+  .nouveau {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.5rem;
+    width: 25%;
+    background-color: #99E2D0;
+    color: #008766;
+    border-radius: 3px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 1rem;
+  }
+
+/* #restaurants-cards i::before {
+    content: "\f004";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+
+#restaurants-cards i:hover::before {
+    opacity: 1;
+    background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
+} */
+
 footer {
-    height: 500px;
+    /* height: 500px; */
     background-color: #353535;
     color: #FFF;
     padding: 1.5rem;
 }
 
+footer svg {
+    width: 100px;
+    margin-bottom: 0.5rem;
+}
+
 footer div {
     display: flex;
+}
+
+footer i {
+    margin-right: 1.2rem;
+    width:10px;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 767.98px) {
+    /* *{
+        background-color: red;
+    } */
+    
 }
