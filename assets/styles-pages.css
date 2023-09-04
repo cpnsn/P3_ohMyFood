@@ -138,6 +138,7 @@ h4 {
 footer {
     position: relative;
     z-index: 1;
+    background-color: red;
     /* bottom: 0;
     width: 100%;
     z-index: 9999;
