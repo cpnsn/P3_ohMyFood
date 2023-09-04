@@ -139,6 +139,10 @@ header img {
     padding: 30px;
 }
 
+#fonctionnement-cards .card svg {
+    padding: 30px;
+}
+
 #restaurants {
     background-color: #F6F6F6;
 }
