@@ -1,0 +1,145 @@
+#restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#restaurant img {
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+    /* align-items: center; */
+    /* height:100px; */
+    /* object-fit: cover; */
+}
+
+#restaurant > div {
+    padding: 1rem;
+    background-color: #F6F6F6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    /* position: absolute; */
+    /* problème width */
+    width: 95%;
+    margin-top: -3rem;
+    /* top: 16rem; */
+    /* z-index: 2; */
+}
+
+#restaurant-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#restaurant-title svg {
+    margin-right: 1.7rem;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.9rem;
+}
+
+h4 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #99E2D0 50%, transparent 50%) 20% 1;
+    display: inline-block;
+}
+
+#restaurant-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#restaurant-cards .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 70px;
+    /* margin: 2rem 0 0 0; */
+    border-radius: 20px;
+    background-color: #FFF;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+#restaurant-cards .card:first-child {
+    margin-top: 0;
+}
+
+#restaurant-cards .card div p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+#restaurant-cards .card div p:nth-child(2) {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+#restaurant-cards .price {
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+
+#restaurant button {
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 60px;
+    width: 70vw;
+    /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
+    box-shadow: 0px 4px 10px 0px #00000049;
+    /* transition: all .2s ease; */
+}
+
+#restaurant button:hover {
+    background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
+}
+
+#restaurant button:active {
+    background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#btn button {
+    width: 50vw;
+}
+
+/* #restaurant-cards .card > p:nth-child(1) {
+    background-color: red;
+} */
+
+
+footer {
+    position: relative;
+    z-index: 1;
+    /* bottom: 0;
+    width: 100%;
+    z-index: 9999;
+     */
+}
