@@ -83,13 +83,19 @@ h4 {
     font-size: 1.2rem;
     box-shadow: 0px 4px 15px 0px #00000026;
     padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    /* padding-top: 0.5rem; */
+    /* padding-bottom: 0.5rem; */
     margin-top: 1rem;
 }
 
 #restaurant-cards .card:first-child {
     margin-top: 0;
+}
+
+#restaurant-cards .card div p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #restaurant-cards .card div p:first-child {
@@ -145,6 +151,34 @@ h4 {
     background-color: red;
 } */
 
+.card {
+    overflow: hidden;
+}
+
+.price-and-check {
+    transition: margin-right 0.5s ease;
+
+}
+
+.card:hover {
+    .price-and-check {
+        margin-right: 0;
+    }
+}
+
+.check {
+    background-color: #99E2D0;
+}
+
+.check i {
+    /* height: 70px; */
+    padding: 30px 20px;
+}
+
+.price-and-check {
+    display: flex;
+    margin-right: -3.7rem;
+}
 
 footer {
     position: relative;
