@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/af69d2ae7a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,10 +21,10 @@
 
         <main>
             <section id="location-explore">
-                <div id="location">
+                <form id="location" action="#">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p>Paris, Belleville</p>
-                </div>
+                    <input type="text" name="ville" value="Paris, Belleville" class="input">
+                </form>
                 <div id="explore">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
@@ -68,15 +68,6 @@
                                 <p>La palette du goût</p>
                                 <p>Ménilmontant</p>
                             </div>
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#FFF" stroke="black">
-                                <defs>
-                                    <linearGradient id="custom-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                      <stop offset="0%" style="stop-color: #c471f5" />
-                                      <stop offset="100%" style="stop-color: #fa71cd" />
-                                    </linearGradient>
-                                  </defs>
-                                <path class="gradient-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                            </svg> -->
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>   
                         </div>
