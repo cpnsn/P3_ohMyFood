@@ -1,5 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+header {
+  box-shadow: 0 1px 10px -3px grey;
+  position: relative;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 0;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+footer svg {
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+footer div {
+  display: flex;
+}
+
+footer i {
+  margin-right: 1.2rem;
+  width: 10px;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: inline-flex;
+    width: 100vw;
+    height: 5rem;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: end;
+  }
+  footer svg {
+    position: absolute;
+    right: 3rem;
+    padding-top: 2rem;
+  }
+  footer .fa-utensils {
+    margin-left: 40vw;
+  }
+  footer div,
+  footer p {
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+  footer p:nth-child(1),
+  footer p:nth-child(2) {
+    margin-top: 0;
+  }
+}
+button {
+  position: absolute;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to top, #9356DC -11.44%, #FF79DA 123.93%);
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 60px;
+  width: 70vw;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2862745098);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
 #fonctionnement-cards .card p:first-child, #fonctionnement-cards, #location,
 #explore, #loader-container {
   display: flex;
@@ -10,10 +95,6 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
-
-button {
-  cursor: pointer;
 }
 
 #loader-container {
@@ -64,17 +145,6 @@ p {
   margin: 0;
 }
 
-header {
-  box-shadow: 0 1px 10px -3px grey;
-  position: relative;
-}
-header img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem 0;
-}
-
 #location-explore form {
   background-color: #eaeaea;
   height: 50px;
@@ -107,19 +177,7 @@ header img {
   padding: 0 2rem 2rem 2rem;
 }
 #explore button {
-  position: absolute;
   bottom: 1rem;
-  margin-bottom: 2rem;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(to top, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  height: 60px;
-  width: 70vw;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2862745098);
-  transition: all 0.5s ease;
 }
 #explore .btn2 {
   background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
@@ -145,7 +203,7 @@ header img {
   margin: 2rem 0 0 0;
   border-radius: 20px;
   background-color: #f6f6f6;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   position: relative;
   cursor: pointer;
@@ -196,9 +254,10 @@ header img {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-#restaurants-cards .card-content p:first-child {
+#restaurants-cards .card-content h3:first-child {
   font-weight: bold;
-  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem 0;
 }
 #restaurants-cards .card-content p:nth-child(2) {
   font-weight: lighter;
@@ -242,30 +301,6 @@ header img {
   top: 0;
   right: 0;
   margin: 1rem;
-}
-
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding: 1.5rem;
-}
-footer svg {
-  width: 100px;
-  margin-bottom: 0.5rem;
-}
-footer div {
-  display: flex;
-}
-footer i {
-  margin-right: 1.2rem;
-  width: 10px;
-}
-footer p {
-  margin-bottom: 0.5rem;
-}
-footer a {
-  text-decoration: none;
-  color: inherit;
 }
 
 @media (min-width: 767.98px) {
@@ -318,32 +353,6 @@ footer a {
   #restaurants-cards .card:first-child {
     margin-bottom: 2rem;
   }
-  footer {
-    display: inline-flex;
-    width: 100vw;
-    height: 5rem;
-    position: relative;
-    padding-right: 0;
-    padding-left: 0;
-    align-items: end;
-  }
-  footer svg {
-    position: absolute;
-    right: 3rem;
-    padding-top: 2rem;
-  }
-  footer .fa-utensils {
-    margin-left: 40vw;
-  }
-  footer div,
-  footer p {
-    margin-top: 2rem;
-    margin-right: 2rem;
-  }
-  footer p:nth-child(1),
-  footer p:nth-child(2) {
-    margin-top: 0;
-  }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

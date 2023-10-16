@@ -28,10 +28,6 @@ h4 {
   margin-left: 1rem;
 }
 
-button {
-  cursor: pointer;
-}
-
 #restaurant {
   display: flex;
   flex-direction: column;
@@ -52,19 +48,7 @@ button {
   margin-top: -3rem;
 }
 #restaurant button {
-  position: absolute;
   bottom: 2rem;
-  margin-bottom: 2rem;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(to top, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFF;
-  font-size: 1.1rem;
-  font-weight: bold;
-  height: 60px;
-  width: 70vw;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2862745098);
-  transition: all 0.5s ease;
 }
 #restaurant .btn2 {
   background: linear-gradient(to top, #cf81fc 0%, #fc87d5 100%);
@@ -98,14 +82,14 @@ button {
   cursor: pointer;
 }
 
-#restaurant-cards {
+.restaurant-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
 }
-#restaurant-cards .card {
+.restaurant-cards .card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,26 +106,26 @@ button {
   overflow: hidden;
   cursor: pointer;
 }
-#restaurant-cards .card:hover .price-and-check {
+.restaurant-cards .card:hover .price-and-check {
   margin-right: 0;
 }
-#restaurant-cards .card:hover p {
+.restaurant-cards .card:hover p {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 13rem;
 }
-#restaurant-cards .card:first-child {
+.restaurant-cards .card:first-child {
   margin-top: 0;
 }
-#restaurant-cards .card div p {
+.restaurant-cards .card div {
   white-space: nowrap;
 }
-#restaurant-cards .card div p:first-child {
+.restaurant-cards .card div h3, .restaurant-cards .card div .price {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 0.3rem;
+  margin: 0 0 0.3rem 0;
 }
-#restaurant-cards .card div p:nth-child(2) {
+.restaurant-cards .card div p {
   font-weight: lighter;
   font-size: 1rem;
 }
@@ -172,7 +156,7 @@ button {
   animation-delay: 0.8s;
 }
 
-#restaurant-cards .price {
+.restaurant-cards .price {
   padding-right: 1rem;
   padding-top: 2rem;
 }
@@ -230,9 +214,9 @@ footer {
   }
 }
 @media (min-width: 1025px) {
-  #restaurant-cards .card {
+  .restaurant-cards .card {
     width: 60%;
   }
 }
 
-/*# sourceMappingURL=style-pages.css.map */
+/*# sourceMappingURL=restaurants.css.map */

@@ -1,0 +1,61 @@
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding: 1.5rem;
+  
+    svg {
+      width: 100px;
+      margin-bottom: 0.5rem;
+    }
+  
+    div {
+      display: flex;
+    }
+  
+    i {
+      margin-right: 1.2rem;
+      width: 10px;
+    }
+  
+    p {
+      margin-bottom: 0.5rem;
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+  }
+  }
+
+  @media (min-width: 1024px) {
+    footer {
+        display: inline-flex;
+        width: 100vw;
+        height: 5rem;
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        align-items: end;
+    
+        svg {
+            position: absolute;
+            right: 3rem;
+            padding-top: 2rem;
+          }
+    
+        .fa-utensils {
+            margin-left: 40vw;
+          }  
+      } 
+    
+      footer div,
+      footer p {
+        margin-top: 2rem;
+        margin-right: 2rem;
+      }
+    
+      footer p:nth-child(1),
+      footer p:nth-child(2) {
+        margin-top: 0;
+      } 
+}
