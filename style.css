@@ -602,7 +602,7 @@ footer {
     max-width: 100% !important;
   }
   h4 {
-    margin-left: 20%;
+    margin-left: 1rem;
   }
   #btn button {
     width: 200px;
@@ -611,6 +611,9 @@ footer {
 @media (min-width: 1025px) {
   .restaurant-cards .card {
     width: 60%;
+  }
+  h4 {
+    margin-left: 20%;
   }
 }
 
