@@ -499,7 +499,7 @@ h4 {
   margin-right: 0;
 }
 
-.restaurant-cards .card:hover p {
+.restaurant-cards .card:hover p, .restaurant-cards .card:hover h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 13rem;
